@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Combining Selectors</title>
+	<style>
+		p.big{
+			color: red;
+		}
+		.one.two{
+			color: brown;
+		}
+		.one{
+			color: blue;
+		}
+		.two{
+			color: green;
+		}
+		.italic > li{
+			color: indigo;
+			font-style: italic;
+		}
+		.bold li{
+			color: brown;
+			background-color: yellow;
+		}
+
+	</style>
+</head>
+<body>
+	<h1>Element with class selector</h1>
+	<p class="big">This will be red</p>
+	<div class="big">This will not be red</div>
+	<p class="one">This will be blue</p>
+	<p class="one">This will be blue</p>
+	<p class="one two">This will be brown</p>
+	<p class="two">This will be green</p>
+	<section class="italic">
+		<h2>child selector</h2>
+		<ul class="italic">
+			<li>this will be italic</li>
+			<li>this will be italic</li>
+			<li>this will be italic</li>
+		</ul>
+	</section>
+	<section class="bold">
+		<h2>descendant selector</h2>
+		<ul>
+			<li>this will be bold</li>
+			<li>this will be bold</li>
+			<li>this will be bold</li>
+		</ul>
+		<ol>
+			<li>this will be bold</li>
+			<li>this will be bold</li>
+			<li>this will be bold</li>
+		</ol>
+	</section>
+
+</body>
+</html>

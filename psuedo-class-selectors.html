@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Pseudo Class Selectors</title>
+	<style>
+		h1{
+			text-align: center;
+			font-style: bold;
+			color: blue;
+		}
+		header li{
+			list-style: none;
+		}
+		a:link, a:visited{
+			text-decoration: none;
+			background-color: cyan;
+			border: 3px solid blue;
+			color: black;
+			display: block;
+			width: 200px;
+			text-align: center;
+			margin-bottom: 1px;
+		}
+		a:hover, a:active{
+			background-color: blue;
+			cursor: pointer;
+			color: red;
+		}
+		header li:nth-child(odd){
+			font-size: 22px
+		}
+		section div:nth-child(odd){
+			font-style: italic;
+		}
+		section div:nth-child(odd):hover{
+			background-color: purple;
+			cursor: pointer;
+			color: violet;
+			width: 200px;
+		}
+		section div:nth-child(even):hover{
+			background-color: green;
+			cursor: pointer;
+			color: indigo;
+			width: 200px
+		}
+	</style>
+</head>
+<body>
+	<h1>Psuedo Class Selectors</h1>
+	<header>
+		<ul>
+			<li><a href="https://www.google.com/maps/@24.8956156,67.1060354,15z" target="-blank" title="Google Maps">Google Maps</a></li>
+			<li><a href="https://www.youtube.com/" target="_blank" title="Youtube">Youtube</a></li>
+			<li><a href="https://www.facebook.com/" target="_blank" title="Facebook">Facebook</a></li>
+		</ul>
+	</header>
+	<section>
+		<div>This is 1</div>
+		<div>This is 2</div>
+		<div>This is 3</div>
+		<div>This is 4</div>
+		<div>This is 5</div>
+		<div>This is 6</div>
+		<div>This is 7</div>
+		<div>This is 8</div>
+	</section>
+</body>
+</html>
